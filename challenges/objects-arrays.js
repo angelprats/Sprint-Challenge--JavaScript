@@ -1,154 +1,156 @@
-// // ==== Objects ====
+// ==== Objects ====
 
-// /*
-//   Given the following information about dinosaurs, create 3 objects:
-//   Use this pattern to create your objects:
-//   object name, diet, weight, length, period
-// */
+/*
+  Given the following information about dinosaurs, create 3 objects:
+  Use this pattern to create your objects:
+  object name, diet, weight, length, period
+*/
 
-// // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceious
+// tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceious
 
-// const dinoOne = {
-//   name: 'tyrannosaurus',
-//   diet: 'carnivorous',
-//   weight: '7000kg',
-//   length: '12m',
-//   period: 'Late Cretaceious',
-//   roar: function() {
-//     return 'RAWERSRARARWERSARARARRRR!';
-//   },
-// };
+const dinoOne = {
+  name: 'tyrannosaurus',
+  diet: 'carnivorous',
+  weight: '7000kg',
+  length: '12m',
+  period: 'Late Cretaceious',
+  roar: function() {
+    return 'RAWERSRARARWERSARARARRRR!';
+  },
+};
 
-// // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
-// const dinoTwo = {
-//   name: 'stegosaurus',
-//   diet: 'herbivorous',
-//   weight: '2000kg',
-//   length: '9m',
-//   period: 'Late Jurassic',
-// };
-// // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceious
-// const dinoThree = {
-//   name: 'velociraptor',
-//   diet: 'carnivorous',
-//   weight: '15kg',
-//   length: '1.8m',
-//   period: 'Late Cretaceious',
-// };
-// // Using your dinosaur objects, log answers to these questions:
+// stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
+const dinoTwo = {
+  name: 'stegosaurus',
+  diet: 'herbivorous',
+  weight: '2000kg',
+  length: '9m',
+  period: 'Late Jurassic',
+};
+// velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceious
+const dinoThree = {
+  name: 'velociraptor',
+  diet: 'carnivorous',
+  weight: '15kg',
+  length: '1.8m',
+  period: 'Late Cretaceious',
+};
+// Using your dinosaur objects, log answers to these questions:
 
-// // How much did tyrannosaurus weigh?
-// console.log(dinoOne.weight);
+// How much did tyrannosaurus weigh?
+console.log(dinoOne.weight);
 
-// // What was the diet of a velociraptor?
-// console.log(dinoThree.diet);
+// What was the diet of a velociraptor?
+console.log(dinoThree.diet);
 
-// // How long was a stegosaurus?
-// console.log(dinoTwo.length);
+// How long was a stegosaurus?
+console.log(dinoTwo.length);
 
-// // What time period did tyrannosaurus live in?
-// console.log(dinoOne.period);
+// What time period did tyrannosaurus live in?
+console.log(dinoOne.period);
 
-// // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-// console.log(dinoOne.roar());
+// Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
+console.log(dinoOne.roar());
 
-// // ==== Arrays ====
+// ==== Arrays ====
 
-// // Given an array of college graduates.  Complete the following requests WITHOUT using any array methods like .forEach(), .map(), .reduce(), .filter()
+// Given an array of college graduates.  Complete the following requests WITHOUT using any array methods like .forEach(), .map(), .reduce(), .filter()
 
-// const graduates = [
-//   {
-//     id: 1,
-//     first_name: 'Cynde',
-//     university: 'Missouri Southern State College',
-//     email: 'ctorry0@macromedia.com',
-//   },
-//   {
-//     id: 2,
-//     first_name: 'Saundra',
-//     university: 'The School of the Art Institute of Chicago',
-//     email: 'swhal1@state.gov',
-//   },
-//   {
-//     id: 3,
-//     first_name: 'Lambert',
-//     university: 'Marian College',
-//     email: 'lparham2@techcrunch.com',
-//   },
-//   {
-//     id: 4,
-//     first_name: 'Modestine',
-//     university: 'International Medical & Technological University',
-//     email: 'mdolder3@symantec.com',
-//   },
-//   {
-//     id: 5,
-//     first_name: 'Chick',
-//     university: 'Sultan Salahuddin Abdul Aziz Shah Polytechnic',
-//     email: 'camorts4@google.com.au',
-//   },
-//   {
-//     id: 6,
-//     first_name: 'Jakob',
-//     university:
-//       'Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft',
-//     email: 'jharken5@spiegel.de',
-//   },
-//   {
-//     id: 7,
-//     first_name: 'Robbi',
-//     university: 'Salem University',
-//     email: 'rbrister6@redcross.org',
-//   },
-//   {
-//     id: 8,
-//     first_name: 'Colline',
-//     university: 'Coastal Carolina University',
-//     email: 'cbrosh7@alibaba.com',
-//   },
-//   {
-//     id: 9,
-//     first_name: 'Michail',
-//     university: 'Universidad Católica de Ávila',
-//     email: 'mrome8@shinystat.com',
-//   },
-//   {
-//     id: 10,
-//     first_name: 'Hube',
-//     university: 'Universitat Rovira I Virgili Tarragona',
-//     email: 'hlethbrig9@foxnews.com',
-//   },
-// ];
+const graduates = [
+  {
+    id: 1,
+    first_name: 'Cynde',
+    university: 'Missouri Southern State College',
+    email: 'ctorry0@macromedia.com',
+  },
+  {
+    id: 2,
+    first_name: 'Saundra',
+    university: 'The School of the Art Institute of Chicago',
+    email: 'swhal1@state.gov',
+  },
+  {
+    id: 3,
+    first_name: 'Lambert',
+    university: 'Marian College',
+    email: 'lparham2@techcrunch.com',
+  },
+  {
+    id: 4,
+    first_name: 'Modestine',
+    university: 'International Medical & Technological University',
+    email: 'mdolder3@symantec.com',
+  },
+  {
+    id: 5,
+    first_name: 'Chick',
+    university: 'Sultan Salahuddin Abdul Aziz Shah Polytechnic',
+    email: 'camorts4@google.com.au',
+  },
+  {
+    id: 6,
+    first_name: 'Jakob',
+    university:
+      'Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft',
+    email: 'jharken5@spiegel.de',
+  },
+  {
+    id: 7,
+    first_name: 'Robbi',
+    university: 'Salem University',
+    email: 'rbrister6@redcross.org',
+  },
+  {
+    id: 8,
+    first_name: 'Colline',
+    university: 'Coastal Carolina University',
+    email: 'cbrosh7@alibaba.com',
+  },
+  {
+    id: 9,
+    first_name: 'Michail',
+    university: 'Universidad Católica de Ávila',
+    email: 'mrome8@shinystat.com',
+  },
+  {
+    id: 10,
+    first_name: 'Hube',
+    university: 'Universitat Rovira I Virgili Tarragona',
+    email: 'hlethbrig9@foxnews.com',
+  },
+];
 
-// /* Request 1: Create a new array called universities that contains all the univeristies in the graduates array.
+/* Request 1: Create a new array called universities that contains all the univeristies in the graduates array.
 
-// Once you have the new array created, sort the universities alphabetically and log the result. */
-// const universities = [];
+Once you have the new array created, sort the universities alphabetically and log the result. */
+const universities = [];
 
-// graduates.forEach(function(item) {
-//   universities.push(`${item.university}`);
-// });
-// console.log(universities.sort());
+graduates.forEach(function(item) {
+  universities.push(`${item.university}`);
+});
+console.log(universities.sort());
 
-// /* Request 2: Create a new array called contactInfo that contains both first name and email of each student.
+/* Request 2: Create a new array called contactInfo that contains both first name and email of each student.
 
-// The resulting contact information should have a space between the first name and the email information like this:
-// Name email@example.com
+The resulting contact information should have a space between the first name and the email information like this:
+Name email@example.com
 
-// Log the result of your new array. */
-// const contactInfo = [];
-// graduates.forEach(function(item) {
-//   contactInfo.push(`${item.first_name} ${item.email}`);
-// });
-// console.log(contactInfo);
+Log the result of your new array. */
+const contactInfo = [];
+graduates.forEach(function(item) {
+  contactInfo.push(`${item.first_name} ${item.email}`);
+});
+console.log(contactInfo);
 
 // /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-// const uni = [];
-// const uni = graduates.filter(function(item) {
-//   return item.includes('Uni');
-// });
+const uni = [];
+for (let i = 0; i < graduates.length; i++) {
+  if (graduates[i].university === 'Uni') {
+    uni.push(graduates[i]);
+  }
+}
 
-// console.log(uni);
+console.log(uni);
 
 // ==== ADVANCED Array Methods ====
 
@@ -230,7 +232,7 @@ zooAnimals.forEach(function(item) {
 });
 console.log(animalNames);
 
-/* Request 2: .map()    
+/* Request 2: .map()
 
 The zoos need a list of all their animal's names (names only, not scientific) converted to lower case.  Create a new array named lowerCase and map over each name to convert them all to lower case.  Log the resut.
 
@@ -238,21 +240,23 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 const lowerCase = [];
 const animalsToLowerCase = zooAnimals.map(function(item) {
-  return item.animal_name.toLowerCase();
+  return lowerCase.push(item.animal_name.toLowerCase());
 });
 
-console.log(animalsToLowerCase);
+console.log(lowerCase);
 
-/* Request 3: .filter() 
+/* Request 3: .filter()
 
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
 
 */
 const largerPopulation = [];
+const animals = zooAnimals.filter(function(item) {
+  return item.population <= 5;
+});
+console.log(animals);
 
-console.log(largerPopulation);
-
-/* Request 4: .reduce() 
+/* Request 4: .reduce()
 
 The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
 
@@ -260,12 +264,12 @@ The zoos need to know their total animal population across the United States.  F
 const populationTotal = 0;
 const popSum = zooAnimals.reduce(function(accumulator, item) {
   console.log(accumulator, item);
-  return accumulator + item.population;
+  return populationTotal.push(accumulator + item.population);
 }, 0);
 
 console.log(popSum);
 
-/* 
+/*
 
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
